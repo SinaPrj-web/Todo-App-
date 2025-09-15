@@ -1,0 +1,47 @@
+:root {
+    --main-bg : #272727;
+    --card-bg : #3F3F3F;
+    --text-color : #B9B9B9;
+}
+body {
+    background-color: var(--main-bg);
+    max-height: 100vh;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.header{
+
+}
+.social-media{
+
+}
+.main{
+
+}
+.title{
+
+}
+.habit-title{
+
+}
+.input-container{
+
+}
+.input{
+
+}
+.todos-container{
+
+}
+.todo{
+
+}
+.todo-text{
+
+}
+.footer{
+
+}
