@@ -12,6 +12,10 @@
     font-family: BungeeShade;
     src: url(../fonts/BungeeShade-Regular.ttf);
 }
+@font-face {
+    font-family: notoBold;
+    src: url(../fonts/NotoSansDisplay_Condensed-Bold.ttf);
+}
 body {
     background-color: var(--main-bg);
     max-height: 100vh;
@@ -70,11 +74,30 @@ body {
     font-size: 1.9rem;
     color: var(--text-color);
     margin: 1rem 0;
+    font-family: notoBold;
+    text-transform: capitalize;
+    word-spacing: 7px;
 }
 .input-container{
-    
+    background-color: var(--card-bg);
+    padding: 11px;
+    border-radius: 30px;
 }
-.input{
+.input-container i {
+    margin-right: 5px;
+    width: 20px;
+    height: auto;
+    cursor: pointer;
+    font-size: 1rem;
+
+}
+#input{
+    border: none;
+    outline: none;
+    background-color: inherit;
+    color: var(--text-color);
+}
+.input:focus  {
 
 }
 .todos-container{
