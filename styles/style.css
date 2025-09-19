@@ -2,6 +2,15 @@
     --main-bg : #272727;
     --card-bg : #3F3F3F;
     --text-color : #B9B9B9;
+    --hover-color: #E0E0E0;
+}
+@font-face {
+    font-family: meow;
+    src: url(../fonts/MeowScript-Regular.ttf);
+}
+@font-face {
+    font-family: BungeeShade;
+    src: url(../fonts/BungeeShade-Regular.ttf);
 }
 body {
     background-color: var(--main-bg);
@@ -10,22 +19,55 @@ body {
 .container {
     width: 80%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
 }
 
 .header{
 
 }
-.social-media{
 
+.social-media{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 2rem;
+    background-color: var(--card-bg);
+    padding: 0.5rem;
+    border-radius: 30px;
+}
+.social-media i {
+    display: block;
+    width: 30px;
+    height: auto;
+    color: var(--text-color);
+    font-size: 1.3rem;
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+}
+.social-media i:hover{
+    color: var(--hover-color);
+    transform: scale(1.2);
 }
 .main{
-
+    display: flex
+;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .title{
-
+    color: var(--text-color);
+    font-size: 4rem;
+    margin: 1rem;
+    font-family: BungeeShade;
 }
 .habit-title{
-
+    
 }
 .input-container{
 
