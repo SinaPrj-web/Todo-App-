@@ -62,15 +62,17 @@ body {
 }
 .title{
     color: var(--text-color);
-    font-size: 4rem;
+    font-size: 3rem;
     margin: 1rem;
     font-family: BungeeShade;
 }
 .habit-title{
-    
+    font-size: 1.9rem;
+    color: var(--text-color);
+    margin: 1rem 0;
 }
 .input-container{
-
+    
 }
 .input{
 
