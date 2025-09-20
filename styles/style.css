@@ -16,6 +16,14 @@
     font-family: notoBold;
     src: url(../fonts/NotoSansDisplay_Condensed-Bold.ttf);
 }
+@font-face {
+    font-family: notoBlack;
+    src: url(../fonts/NotoSansDisplay_Condensed-Black.ttf);
+}
+@font-face {
+    font-family: notoLight;
+    src: url(../fonts/NotoSansDisplay_Condensed-Light.ttf);
+}
 body {
     background-color: var(--main-bg);
     max-height: 100vh;
@@ -31,14 +39,17 @@ body {
 }
 
 .header{
-
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+    width: 100%;
 }
 
 .social-media{
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2rem;
     gap: 2rem;
     background-color: var(--card-bg);
     padding: 0.5rem;
@@ -57,9 +68,9 @@ body {
     color: var(--hover-color);
     transform: scale(1.2);
 }
+
 .main{
-    display: flex
-;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -97,17 +108,60 @@ body {
     background-color: inherit;
     color: var(--text-color);
 }
-.input:focus  {
-
-}
-.todos-container{
-
+.todos{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
 }
 .todo{
+    list-style-type: none;
+    background-color: var(--card-bg);
+    padding: 0.4rem 0.3rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 14rem;
 
 }
-.todo-text{
+.todo label {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#todo-chechbox {
+    appearance: none;
+    background-color: var(--main-bg) ;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    position: relative;
 
+}
+#todo-chechbox:checked {
+    
+}
+#todo-chechbox:checked::after{
+    content: "✔" ;
+    color: white;
+    font-size: 14px;
+    position: absolute;
+    left: 4px;
+    top: 2px;
+}
+.todo-text{
+    color: var(--text-color);
+    font-family: notoBold ;
+    font-weight: 200;
+    font-size: 1.1rem;
+}
+.done {
+    text-decoration: line-through;
+    color: #777;
 }
 .footer{
 
