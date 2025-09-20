@@ -68,7 +68,18 @@ body {
     color: var(--hover-color);
     transform: scale(1.2);
 }
-
+.dev{
+    background-color: var(--card-bg);
+    padding: 0.5rem;
+    border-radius: 30px;
+}
+.dev span {
+    color: var(--text-color);
+    font-family: notoBlack ;
+}
+.dev-name {
+    color: var(--text-color);
+}
 .main{
     display: flex;
     flex-direction: column;
@@ -162,7 +173,4 @@ body {
 .done {
     text-decoration: line-through;
     color: #777;
-}
-.footer{
-
 }
