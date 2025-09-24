@@ -26,15 +26,17 @@
     <section class="main">
         <h2 class="title">checklist</h2>
         <h4 class="habit-title">daily positive habit</h4>
+        <span id="error-message"></span>
         <div class="input-container">
             <input id="input" type="text">
             <i id="check" class="fa-solid fa-circle-check" style="color: #00ff55;"></i>
         </div>
         <ul id="todos-container" class="todos">
             <li class="todo">
-                <label>
-                <input type="checkbox" name="checkbox" id="todo-chechbox">
+                <label class="todo-label">
+                <input type="checkbox" name="checkbox" id="todo-chechbox" class="checkbox">
                 <span class="todo-text">wake up early</span>
+                <i id="delete-btn" class="fa-solid fa-trash" style="color: #df4e4e;"></i>
             </label>
             </li>
         </ul>

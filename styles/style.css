@@ -104,6 +104,7 @@ body {
     background-color: var(--card-bg);
     padding: 11px;
     border-radius: 30px;
+    margin-top: 2rem;
 }
 .input-container i {
     margin-right: 5px;
@@ -125,8 +126,10 @@ body {
     justify-content: center;
     flex-direction: column;
     padding: 0;
+    gap: 10px;
 }
 .todo{
+    position: relative;
     list-style-type: none;
     background-color: var(--card-bg);
     padding: 0.4rem 0.3rem;
@@ -137,12 +140,12 @@ body {
     width: 14rem;
 
 }
-.todo label {
+.todo-label {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
-#todo-chechbox {
+.checkbox {
     appearance: none;
     background-color: var(--main-bg) ;
     width: 20px;
@@ -153,10 +156,8 @@ body {
     position: relative;
 
 }
-#todo-chechbox:checked {
-    
-}
-#todo-chechbox:checked::after{
+
+.checkbox:checked::after{
     content: "✔" ;
     color: white;
     font-size: 14px;
@@ -164,6 +165,10 @@ body {
     left: 4px;
     top: 2px;
 }
+.checkbox:checked + .todo-text {
+    text-decoration: line-through;
+    color: gray;
+  }
 .todo-text{
     color: var(--text-color);
     font-family: notoBold ;
@@ -173,4 +178,14 @@ body {
 .done {
     text-decoration: line-through;
     color: #777;
+}
+#error-message {
+    position: absolute;
+    top: 40%;
+    color: red;
+}
+#delete-btn {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
 }
