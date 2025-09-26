@@ -138,12 +138,14 @@ body {
     justify-content: flex-start;
     align-items: center;
     width: 14rem;
+    word-wrap: break-word;
 
 }
 .todo-label {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    gap: 5px;
 }
 .checkbox {
     appearance: none;
@@ -174,6 +176,11 @@ body {
     font-family: notoBold ;
     font-weight: 200;
     font-size: 1.1rem;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal; 
+    display: inline-block;
+    max-width: 80%;
 }
 .done {
     text-decoration: line-through;
@@ -184,7 +191,7 @@ body {
     top: 40%;
     color: red;
 }
-#delete-btn {
+.delete-btn {
     position: absolute;
     right: 10px;
     cursor: pointer;

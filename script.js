@@ -3,7 +3,7 @@ let inputElem = $.querySelector('#input')
 let confirmBtn = $.querySelector('#check')
 let todosContainer = $.querySelector('#todos-container')
 let errorElem = $.querySelector('#error-message')
-let deleteBtn = $.querySelector('#delete-btn')
+
 
 
 
@@ -18,22 +18,30 @@ function addTodoIntoDOM (event) {
         errorElem.textContent = ''
         let todoStructor = `
         <li class="todo">
-                    <label class="todo-label">
-                    <input type="checkbox" name="checkbox" id="todo-chechbox" class="checkbox">
-                    <span class="todo-text">${inputValue}</span>
-                </label>
-                </li>`
+                <label class="todo-label">
+                <input type="checkbox" name="checkbox" id="todo-chechbox" class="checkbox">
+                <span class="todo-text">${inputValue}</span>
+            </label>
+            <i class="delete-btn fa-solid fa-trash" style="color: #df4e4e;"></i>
+            </li>`
     
     
         todosContainer.insertAdjacentHTML('beforeend' , todoStructor) 
         console.log('todo added')
         inputElem.value = ''
     }
+    
 }
+
+todosContainer.addEventListener('click' , function(event){
+    if (event.target.classList.contains('delete-btn')) {
+        let todoItem = event.target.closest('li')
+        todoItem.remove()
+    }
+})
 
 
 // delete function
-
 inputElem.addEventListener('input' , ()=> {
     if(inputElem.value.trim() !== '') {
         errorElem.textContent = ''
@@ -47,7 +55,7 @@ inputElem.addEventListener('input' , ()=> {
 
 confirmBtn.addEventListener('click' , addTodoIntoDOM)
 inputElem.addEventListener('keydown' , addTodoIntoDOM)
-deleteBtn.addEventListener('click' , deleTodoHandler)
+
 
 
 
