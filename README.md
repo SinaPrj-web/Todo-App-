@@ -16,7 +16,7 @@ Users can add tasks, mark them as completed, and delete them. Input validation a
 ---
 
 ## 📸 Preview
-(Add a screenshot or GIF of your app here)
+
 
 ---
 
