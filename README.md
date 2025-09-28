@@ -16,7 +16,7 @@ Users can add tasks, mark them as completed, and delete them. Input validation a
 ---
 
 ## 📸 Preview
-![Coffee Shop Landing Page Screenshot](Screenshot(113).png)
+![Todo App ScreenShot](SS.png)
 
 ---
 
