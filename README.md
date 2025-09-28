@@ -16,7 +16,7 @@ Users can add tasks, mark them as completed, and delete them. Input validation a
 ---
 
 ## 📸 Preview
-
+![Coffee Shop Landing Page Screenshot](Screenshot(113).png)
 
 ---
 
@@ -29,7 +29,7 @@ Users can add tasks, mark them as completed, and delete them. Input validation a
 ## ⚡ How to Use
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/todo-app.git
+   git clone https://github.com/SinaPrj-web/todo-app.git
    Open the project folder:
 
     cd todo-app
